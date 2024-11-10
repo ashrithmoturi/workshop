@@ -1,0 +1,220 @@
+:root {
+    /* Declaring Colors */
+    --tws-red-primary: #ef354b;
+    --tws-white-primary: #ffffff;
+    --tws-grey-primary: #595959;
+    --tws-black-primary: #111111;
+}
+
+body {
+    /* Set margin and padding to 0 to remove default margin and padding */
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: var(--tws-white-primary);
+    background-image: url('../public/public/background_image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Inter", serif;
+}
+
+/* Starting Navigation Bar */
+nav {
+    /* Navigation bar styling */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: 2px solid var(--tws-grey-primary);
+}
+
+.navbarIcon {
+    /* Resizing the icon */
+    width: 96px;
+    height: 96px;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+
+ul {
+    /* Middle section of navigation bar */
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+}
+
+a:link, a:visited, a:active {
+    color: var(--tws-white-primary);
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    color: var(--tws-red-primary);
+    transition: color 150ms;
+}
+.threeDotsbtn {
+    /* Button for additional options */
+    padding: 1rem;
+    margin-right: 6rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.threeDotsbtn:hover {
+    background-color: #595959;
+    transition: color 150ms, background-color 250ms;
+}
+
+.threeDotsIcon {
+    height: 24px;
+    width: 24px;
+}
+
+/* Main Content of the Page */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.headerText {
+    margin-left: 6rem;
+}
+
+h1 {
+    /* Main header styling */
+    color: var(--tws-white-primary);
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+h2 {
+    /* Secondary header styling */
+    color: var(--tws-red-primary);
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.subtext {
+    /* Subtitle styling */
+    color: var(--tws-white-primary);
+    font-size: 1.125rem;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 0 2rem;
+}
+
+.readMoreBtn {
+    background-color: var(--tws-red-primary);
+    border: none;
+    font-size: 1rem;
+    color: var(--tws-white-primary);
+    padding: 0.75rem 2rem;
+}
+.readMoreBtn:hover {
+    background-color: #ff5d70;
+    cursor: pointer;
+    transition: color 150ms, background-color 250ms;
+}
+.heroImageSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6rem;
+}
+
+.heroWatch {
+    transform: scale(0.95);
+}
+
+.backgroundText {
+    color: #8b8b8b;
+    letter-spacing: 0.4rem;
+    font-weight: 800;
+    font-size: 11rem;
+    transform: rotate(90deg);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0.1rem;
+    opacity: 0.25;
+}
+.priceText, .priceCost {
+    color: #b1b1b1;
+    margin: 0;
+}
+
+.priceText {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.priceCost {
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.25rem;
+}
+/* Footer */
+.footerImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.75;
+}
+
+/* Contact Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50vw;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 20px;
+}
+.supportHeader {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.supportLabel {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.supportInput, .messageBox {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.messageBox {
+    height: 10rem;
+    resize: none;
+}
+
+.supportBtn {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
